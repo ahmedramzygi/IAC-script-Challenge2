@@ -1,28 +1,32 @@
 # IAC-script-Challenge2
 Creating the required Infrastructure-as-code scripts for a new cloud environment in AWS of the following diagram with the following resources and properties:-
+
 Write a CloudFormation script that:
 
-1)Creates a VPC.
 
-2)It will accept the IP Range -also known as CIDR block- from an input parameter.
+Creates a VPC
 
-3) Creates and attaches an Internet Gateway to the VPC.
+It will accept the IP Range -also known as CIDR block- from an input parameter
 
-4)Creates Two Subnets within the VPC with Name Tags to call them “Public” and “Private”
+Creates and attaches an Internet Gateway to the VPC
 
-5) These will also need input parameters for their ranges, just like the VPC.
+Creates Two Subnets within the VPC with Name Tags to call them “Public” and “Private”
 
-6) The Subnet called “Public” needs to have a NAT Gateway deployed in it.
+These will also need input parameters for their ranges, just like the VPC
 
-7) This will require you to allocate an Elastic IP that you can then use to assign it to the NAT Gateway.
+The Subnet called “Public” needs to have a NAT Gateway deployed in it
 
-8)The Public Subnet needs to have the MapPublicIpOnLaunch property set to true. Use this reference for help
+This will require you to allocate an Elastic IP that you can then use to assign it to the NAT Gateway
 
-9) The Private Subnet needs to have the MapPublicIpOnLaunch property set to false
+The Public Subnet needs to have the MapPublicIpOnLaunch property set to true. Use this reference for help
 
-10)Both subnets need to be /24 in size
+The Private Subnet needs to have the MapPublicIpOnLaunch property set to false
 
-11)You will need 2 Routing Tables, one named Public and the other one Private
+Both subnets need to be /24 in size
+
+If you need assistance with IP math, you can use a subnet calculator such as this one
+
+You will need 2 Routing Tables, one named Public and the other one Private
 
 Assign the Public and Private Subnets to their corresponding Routing table
 
